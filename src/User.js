@@ -4,10 +4,12 @@ class User {
     this.username = username
     this.password = password
     this.age = age
-    this.loggedIn = true
+    this.loggedIn = false
   }
 
-  login(password){}
+  login(password){
+    
+  }
 
   logout(){}
 }

@@ -13,7 +13,7 @@ class Scooter{
   rent(charge,isBroken){
     if (charge > 20 && isBroken===false){
       let removeFromStation = new Scooter(null)
-      this.user = new User
+      this.user = new User()
     }
     if (charge <= 20){
       throw new Error("scooter needs to charge")
