@@ -12,7 +12,7 @@ class Scooter{
   }
   rent(charge,isBroken){
     if (charge > 20 && isBroken===false){
-      this.station = null
+      let removeFromStation = new Scooter(null)
       this.user = new User
     }
     if (charge <= 20){
@@ -23,7 +23,14 @@ class Scooter{
     }
   }
 
-  dock(){}
+  dock(station){
+    this.station = station
+    this.user = clearImmediate
+  }
+
+  recharge(){}
+
+  requestRepair(){}
 
 }
 
