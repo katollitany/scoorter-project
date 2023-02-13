@@ -3,10 +3,11 @@ const Scooter = require('./Scooter')
 
 class ScooterApp {
   // ScooterApp code here
-  constructor(station){
-    this.station=''
-    this.registeredUsers={}
+  constructor(station,registeredUsers){
+    this.station = station
+    this.registeredUsers = registeredUsers
   }
+
   registerUser(username, password, age){}
   loginUser(username, password){}
   logoutUser(username){}
@@ -14,6 +15,7 @@ class ScooterApp {
   dockScooter(scooter, station){}
   rentScooter(scooter, user){}
   print(){}
+
 }
 
 module.exports = ScooterApp
