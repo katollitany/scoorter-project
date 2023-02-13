@@ -8,10 +8,16 @@ class User {
   }
 
   login(password){
-    
+    if (this.password === password){
+      this.loggedIn = true
+    }else {
+      throw new Error("incorrect password")
+    }
   }
 
-  logout(){}
+  logout(){
+    this.loggedIn = false
+  }
 }
 
 module.exports = User

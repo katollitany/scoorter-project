@@ -31,8 +31,7 @@ describe('User tests', () => {
 
     // test login
     test("A user is logged in with incorrect password", () => {
-        testUser.login(123)
-        expect(testUser.loggedIn).toEqual(false);
+        expect(() => testUser.login(123)).toThrow(new Error("incorrect password"));
     })
 
     test("A user is logged in with correct password", () => {
